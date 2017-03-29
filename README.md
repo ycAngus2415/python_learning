@@ -2,8 +2,8 @@
 # 2017.3.15
 我感觉要是不花更多的时间，更加努力，我的学习就要到头了。
 
-## 在atom中文输出python3解决办法
-‘’‘
+## 在atom中文输出python3解决办法  
+'''
 import io
 import sys
 sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding='utf8')
@@ -19,7 +19,7 @@ sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding='utf8')
 ## 一来就有问题。双下划线开头就变成私有变量了
 ## 双下滑开头和结尾事特殊变量，不是私有的,
 ## 使用__slots__ 能够简简单单哪。只要这几个属性，你要其他属性那就错了。
-‘’‘
+'''
 class Student(object):
     __slots__ = ('name', 'age')#一个元组搞定
 '''
